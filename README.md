@@ -4,9 +4,9 @@ A new Flutter project.
 
 ## Getting Started
 
-<img src="https://user-images.githubusercontent.com/101389853/188288424-27aff6b6-a004-4b45-acfc-e2b06d3366be.gif" alt="Girl in a jacket" width="500" height="600">
+<img src="https://user-images.githubusercontent.com/101389853/188288424-27aff6b6-a004-4b45-acfc-e2b06d3366be.gif" alt="Girl in a jacket"  height="600">
 
-
+<img src="https://user-images.githubusercontent.com/101389853/188288471-6c3b7fe3-15fb-4bd3-a419-50b91064e24c.gif" alt="Girl in a jacket"  height="600">
 
 
 
