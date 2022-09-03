@@ -4,6 +4,13 @@ A new Flutter project.
 
 ## Getting Started
 
+<img src="https://user-images.githubusercontent.com/101389853/188288424-27aff6b6-a004-4b45-acfc-e2b06d3366be.gif" alt="Girl in a jacket" width="500" height="600">
+
+
+
+
+
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
