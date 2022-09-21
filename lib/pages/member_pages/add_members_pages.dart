@@ -82,7 +82,7 @@ class _AddMemberPageState extends State<AddMemberPage> {
           ),
           Center(
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               child: SingleChildScrollView(
                 child: Form(
                   key: formKey,
@@ -92,7 +92,7 @@ class _AddMemberPageState extends State<AddMemberPage> {
                       Stack(
                         children: [
                           Container(
-                            margin: EdgeInsets.symmetric(
+                            margin: const EdgeInsets.symmetric(
                                 horizontal: 30, vertical: 30),
                             child: CircleAvatar(
                               radius: 60,
@@ -223,9 +223,9 @@ class _AddMemberPageState extends State<AddMemberPage> {
                                 },
                                 elevation: 10,
                                 fillColor: Colors.purpleAccent,
-                                child: Icon(Icons.add_a_photo),
                                 padding: EdgeInsets.all(15),
                                 shape: CircleBorder(),
+                                child: const Icon(Icons.add_a_photo),
                               ))
                         ],
                       ),
@@ -233,13 +233,13 @@ class _AddMemberPageState extends State<AddMemberPage> {
                         height: 25,
                       ),
                       Text(
-                        'Add ' + _selectedMember,
-                        style: TextStyle(
+                        'Add $_selectedMember',
+                        style: const TextStyle(
                             fontWeight: FontWeight.w500,
                             color: Colors.black87,
                             fontSize: 25),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 25,
                       ),
                       TextFormField(
@@ -255,19 +255,19 @@ class _AddMemberPageState extends State<AddMemberPage> {
                         decoration: InputDecoration(
                             contentPadding:
                                 EdgeInsets.symmetric(horizontal: 15),
-                            hintText: "Enter " + _selectedMember + " Name",
-                            icon: Icon(
+                            hintText: "Enter $_selectedMember Name",
+                            icon: const Icon(
                               Icons.account_circle,
                               size: 30,
                               color: Colors.lightBlue,
                             ),
-                            hintStyle: TextStyle(color: Colors.grey),
+                            hintStyle: const TextStyle(color: Colors.grey),
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(15),
                                 borderSide: BorderSide(
                                   color: Colors.white.withOpacity(0.9),
                                 ))),
-                        style: TextStyle(
+                        style: const TextStyle(
                           //color: Color(0xffff3333),
                           fontWeight: FontWeight.w600,
                         ),

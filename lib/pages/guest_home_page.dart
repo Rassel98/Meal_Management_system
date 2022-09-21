@@ -376,7 +376,7 @@ class _GuestHomePageState extends State<GuestHomePage> {
   }
 
   void _login() {
-    Navigator.pushNamed(context, LoginManagerPage.routeName);
+    Navigator.pushReplacementNamed(context, LoginManagerPage.routeName);
   }
 
   void _cost() {

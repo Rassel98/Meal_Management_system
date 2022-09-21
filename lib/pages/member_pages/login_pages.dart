@@ -67,8 +67,8 @@ class _LoginManagerPageState extends State<LoginManagerPage> {
                       CircleAvatar(
                         radius: 60.0,
                         child: ClipRRect(
-                          child: Image.asset('images/login_place_holder.png'),
                           borderRadius: BorderRadius.circular(60.0),
+                          child: Image.asset('images/login_place_holder.png'),
                         ),
                       ),
                       // Image.asset(
@@ -77,9 +77,9 @@ class _LoginManagerPageState extends State<LoginManagerPage> {
                       //   width: 100,
                       //   fit: BoxFit.cover,
                       // ),
-                      SizedBox(height: 12.0),
+                      const SizedBox(height: 12.0),
                       Text(
-                        _radioSelected + ' Login',
+                        '$_radioSelected Login',
                         style: const TextStyle(
                           color: Colors.redAccent,
                           fontSize: 30,
@@ -150,11 +150,12 @@ class _LoginManagerPageState extends State<LoginManagerPage> {
                       InkWell(
                         onTap: _loginMembers,
                         child: Container(
+                          clipBehavior: Clip.antiAlias,
                           height: 50,
                           width: double.infinity,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
-                            color: Color(0xffff3333),
+                            color: const Color(0xffff3333),
                           ),
                           child: const Center(
                             child: Text(
@@ -167,7 +168,7 @@ class _LoginManagerPageState extends State<LoginManagerPage> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 15,
                       ),
                       Row(
@@ -183,8 +184,8 @@ class _LoginManagerPageState extends State<LoginManagerPage> {
                               });
                             },
                           ),
-                          Text('Manager'),
-                          SizedBox(
+                          const Text('Manager'),
+                          const SizedBox(
                             height: 10,
                           ),
                           Radio(
@@ -197,7 +198,7 @@ class _LoginManagerPageState extends State<LoginManagerPage> {
                               });
                             },
                           ),
-                          Text('Member'),
+                          const Text('Member'),
                         ],
                       ),
 
@@ -253,7 +254,7 @@ class _LoginManagerPageState extends State<LoginManagerPage> {
                       ),
                       TextButton(
                           onPressed: () {
-                            Navigator.pushNamed(context, GuestHomePage.routeName);
+                            Navigator.pushReplacementNamed(context, GuestHomePage.routeName);
                           },
                           child: const Text(
                             'Guest Mode',
@@ -283,7 +284,7 @@ class _LoginManagerPageState extends State<LoginManagerPage> {
         setStatusPoint(memberData).whenComplete(() {
           print('Login Successfully!');
 
-          Navigator.pushNamed(context, HomePage.routeName,arguments: memberData);
+          Navigator.pushReplacementNamed(context, HomePage.routeName,arguments: memberData);
           Fluttertoast.showToast(
               msg: "Login Successfully!",
               toastLength: Toast.LENGTH_SHORT,

@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
       home: const LoginManagerPage(),
       initialRoute:  LauncherPage.routeName,
       routes: {
-        LoginManagerPage.routeName:(context)=>LoginManagerPage(),
+        LoginManagerPage.routeName:(context)=>const LoginManagerPage(),
         AddMemberPage.routeName:(context)=>AddMemberPage(),
         HomePage.routeName: (context)  => HomePage(),
         MemberMealDetailsPage.routeName: (context) => MemberMealDetailsPage(),

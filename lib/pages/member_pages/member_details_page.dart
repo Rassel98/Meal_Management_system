@@ -26,7 +26,7 @@ class _MemberDetailsState extends State<MemberDetails> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Member details'),
+        title: const Text('Member details'),
       ),
       body: Center(
         child: Consumer<AddMemberProvider>(
